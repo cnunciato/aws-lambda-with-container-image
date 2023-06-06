@@ -11,17 +11,16 @@ pulumi up
 
 ```
 Updating (dev)
+...
 
-View in Browser (Ctrl+O): https://app.pulumi.com/christian-pulumi-corp/container-with-api-gateway/dev/updates/10
-
-     Type                             Name                            Status              Info
+     Type                             Name                            Status
  +   pulumi:pulumi:Stack              container-with-api-gateway-dev  created (90s)
  +   ├─ awsx:ecr:Repository           repo                            created (2s)
  +   │  ├─ aws:ecr:Repository         repo                            created (0.49s)
  +   │  └─ aws:ecr:LifecyclePolicy    repo                            created (0.34s)
  +   ├─ aws:iam:Role                  role                            created (1s)
  +   ├─ aws:iam:RolePolicyAttachment  attachment                      created (0.57s)
- +   ├─ awsx:ecr:Image                image                           created (0.25s)     1 warning
+ +   ├─ awsx:ecr:Image                image                           created (0.25s)
  +   ├─ aws:lambda:Function           lambda                          created (19s)
  +   └─ aws-apigateway:index:RestAPI  api                             created (4s)
  +      ├─ aws:apigateway:RestApi     api                             created (1s)
