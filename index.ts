@@ -29,10 +29,10 @@ const role = new aws.iam.Role("role", {
     },
 });
 
- new aws.iam.RolePolicyAttachment("attachment", {
+new aws.iam.RolePolicyAttachment("attachment", {
     role,
     policyArn: aws.iam.ManagedPolicies.AWSLambdaExecute,
- });
+});
 
 const lambda = new aws.lambda.Function("lambda", {
     packageType: "Image",
