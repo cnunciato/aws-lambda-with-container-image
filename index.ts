@@ -1,6 +1,5 @@
 import * as apigateway from "@pulumi/aws-apigateway";
 import * as awsx from "@pulumi/awsx";
-import * as docker from "@pulumi/docker";
 import * as aws from "@pulumi/aws";
 
 const repo = new awsx.ecr.Repository("repo", {

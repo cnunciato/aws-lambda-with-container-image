@@ -8,7 +8,6 @@
         "@pulumi/aws": "^5.0.0",
         "@pulumi/aws-apigateway": "^1.0.1",
         "@pulumi/awsx": "^1.0.0",
-        "@pulumi/docker": "^4.2.4",
         "@pulumi/pulumi": "^3.0.0"
     }
 }
