@@ -41,14 +41,14 @@ const lambda = new aws.lambda.Function("lambda", {
     role: role.arn,
 });
 
-const api = new awsx.classic.apigateway.API("api", {
+const api = new apigateway.RestAPI("api", {
     routes: [
         {
             path: "/route",
             method: "GET",
             eventHandler: lambda,
         },
-    ]
+    ],
 });
 
 export const { url } = api;
